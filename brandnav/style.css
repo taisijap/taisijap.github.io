@@ -1,0 +1,63 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.desktop-nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.room-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure the navigation bar is invisible but clickable */
+.desktop-nav a {
+  color: rgba(0, 0, 0, 0); /* Make text invisible */
+}
+
+.desktop-nav:hover a {
+  color: rgba(0, 0, 0, 1); /* Show the menu on hover if you want */
+}
+
+/* Make the images scale correctly */
+.room-image {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.room-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
