@@ -12,17 +12,17 @@ body {
   background-color: white;
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
-  width: 100%; 
+  width: 100%;
   box-sizing: border-box;
-  margin-top: 180px;
+  position: relative; 
+  margin-top: 10px; 
 }
 
 .desktop-nav a {
-  font-family: Arial, sans-serif;
   text-decoration: none;
   color: black;
   margin-right: 20px;
-  font-size: 15px; 
+  font-size: 14px; 
   font-weight: normal; 
 }
 
