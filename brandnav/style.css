@@ -1,0 +1,78 @@
+/* Style for the desktop navigation */
+.desktop-nav {
+  display: flex;
+  justify-content: flex-start; /* Align the menu to the left */
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.desktop-nav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  font-size: 14px; /* 2 sizes smaller */
+  font-weight: normal; /* Ensure the text is not bold */
+}
+
+.desktop-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Menu */
+.hamburger {
+  display: none; /* Hide the hamburger on desktop */
+}
+
+.overlay-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-menu a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.overlay-menu .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Adjust for responsiveness */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    z-index: 1001;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  .desktop-nav {
+    display: none; /* Hide desktop nav on mobile */
+  }
+}
