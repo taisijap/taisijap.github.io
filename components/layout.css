@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Hero Image Styles */
+.hero-image {
+    flex: 2;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-image .text-box {
+    position: absolute;
+    bottom: 70px;  /* Above the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 4px 8px;  /* Reduced padding */
+    border: 1px solid black;
+    text-align: center;
+}
+
+.hero-image .text-box p {
+    font-size: 0.8em;  /* Smaller font for the hero image */
+    color: #000;
+}
+
+/* Side Images Styles */
+.side-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 70%;  /* Reduced the width for the side images */
+    height: auto;
+}
+
+.image-container .text-box {
+    position: absolute;
+    bottom: 30px;  /* Raised a bit above the bottom */
+    left: 35%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 4px 8px;  /* Reduced padding */
+    border: 1px solid black;
+    text-align: center;
+    width: auto;
+    white-space: nowrap;
+}
+
+.image-container .text-box p {
+    font-size: 0.4em;  /* Smaller font for the side images */
+    color: #000;
+    white-space: nowrap;  /* Ensures text stays in one line */
+}
